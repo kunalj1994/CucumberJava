@@ -1,0 +1,30 @@
+-------------------------------------------------------------------------------
+Test set: Sample.MyfirstfeaturefileTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 2, Skipped: 2, Time elapsed: 0.861 sec <<< FAILURE!
+Given User is at facebook login page(Scenario: Validate first name user field)  Time elapsed: 0.005 sec  <<< ERROR!
+java.lang.IllegalStateException: The driver executable does not exist: C:\Users\Jharna\Desktop\Cucumber Setup\chromedriver_win32\chromedriver.exe
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:534)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:136)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:131)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:32)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:137)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:329)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:88)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:124)
+	at Sample.Myfirststepdef.User_is_at_facebook_login_page(Myfirststepdef.java:20)
+	at ?.Given User is at facebook login page(Sample/myfeature1.feature:5)
+
+Scenario: Validate first name user field  Time elapsed: 0.006 sec  <<< ERROR!
+java.lang.IllegalStateException: The driver executable does not exist: C:\Users\Jharna\Desktop\Cucumber Setup\chromedriver_win32\chromedriver.exe
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:534)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:136)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:131)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:32)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:137)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:329)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:88)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:124)
+	at Sample.Myfirststepdef.User_is_at_facebook_login_page(Myfirststepdef.java:20)
+	at ?.Given User is at facebook login page(Sample/myfeature1.feature:5)
+

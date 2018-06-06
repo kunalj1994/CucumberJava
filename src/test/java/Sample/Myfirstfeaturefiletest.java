@@ -8,7 +8,7 @@ import cucumber.api.junit.Cucumber;
 @RunWith(Cucumber.class)
 @CucumberOptions()
 
-public class Myfirstfeaturefiletest {
+public class MyfirstfeaturefileTest {
 	
 
 }
