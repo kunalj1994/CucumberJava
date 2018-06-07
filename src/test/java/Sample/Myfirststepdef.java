@@ -16,7 +16,7 @@ public class Myfirststepdef {
 	
 	@Given("^User is at facebook login page$")
 	public void User_is_at_facebook_login_page(){
-		System.setProperty("webdriver.chrome.driver","C:\\Users\\Jharna\\Desktop\\Cucumber Setup\\chromedriver_win32\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","src\\test\\resources\\drivers\\chromedriver.exe");
 		driver  = new ChromeDriver();
 		driver.get("https://www.facebook.com/");
 		}
@@ -29,7 +29,7 @@ public class Myfirststepdef {
 	@Then ("^User checks user first name is present$") 
 		public void User_checks_user_first_name_is_present() {
 		String userNameActual = driver.findElement(By.xpath("//*[@id=\"u_0_9\"]")).getAttribute("value");
-		Assert.assertEquals("David", userNameActual);
+		Assert.assertEquals("Jharna", userNameActual);
 	}
 	
 	

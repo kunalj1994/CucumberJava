@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="4" failures="0" name="Sample.MyfirstfeaturefileTest" time="0.023" errors="2" skipped="2">
+<testsuite tests="4" failures="0" name="Sample.MyfirstfeaturefileTest" time="0.003" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_171\jre\bin"/>
@@ -65,38 +65,8 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="Scenario: Validate first name user field" name="Given User is at facebook login page" time="0.005">
-    <error message="The driver executable does not exist: C:\Users\Jharna\Desktop\Cucumber Setup\chromedriver_win32\chromedriver.exe" type="java.lang.IllegalStateException">java.lang.IllegalStateException: The driver executable does not exist: C:\Users\Jharna\Desktop\Cucumber Setup\chromedriver_win32\chromedriver.exe
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:534)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:136)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:131)
-	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:32)
-	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:137)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:329)
-	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:88)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:124)
-	at Sample.Myfirststepdef.User_is_at_facebook_login_page(Myfirststepdef.java:20)
-	at ✽.Given User is at facebook login page(Sample/myfeature1.feature:5)
-</error>
-  </testcase>
-  <testcase classname="Scenario: Validate first name user field" name="Scenario: Validate first name user field" time="0.006">
-    <error message="The driver executable does not exist: C:\Users\Jharna\Desktop\Cucumber Setup\chromedriver_win32\chromedriver.exe" type="java.lang.IllegalStateException">java.lang.IllegalStateException: The driver executable does not exist: C:\Users\Jharna\Desktop\Cucumber Setup\chromedriver_win32\chromedriver.exe
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:534)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:136)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:131)
-	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:32)
-	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:137)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:329)
-	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:88)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:124)
-	at Sample.Myfirststepdef.User_is_at_facebook_login_page(Myfirststepdef.java:20)
-	at ✽.Given User is at facebook login page(Sample/myfeature1.feature:5)
-</error>
-  </testcase>
-  <testcase classname="Scenario: Validate first name user field" name="When User enters user first name" time="0.006">
-    <skipped/>
-  </testcase>
-  <testcase classname="Scenario: Validate first name user field" name="Then User checks user first name is present" time="0.006">
-    <skipped/>
-  </testcase>
+  <testcase classname="Scenario: Validate first name user field" name="Given User is at facebook login page" time="0.003"/>
+  <testcase classname="Scenario: Validate first name user field" name="When User enters user first name" time="0"/>
+  <testcase classname="Scenario: Validate first name user field" name="Then User checks user first name is present" time="0"/>
+  <testcase classname="Scenario: Validate first name user field" name="Scenario: Validate first name user field" time="0"/>
 </testsuite>
