@@ -8,6 +8,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import cucumber.api.java.en.And;
+import cucumber.api.java.en.But;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -29,14 +31,26 @@ public class Myfirststepdef {
 		WebDriverWait wait = new WebDriverWait(driver, 10000);
 		WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(By.name("firstname")));
 		element.sendKeys("Jharna");
-		// element.sendKeys("Jharna");
+		
 	}
 	
 	@Then ("^User checks user first name is present$") 
 		public void User_checks_user_first_name_is_present() {
-		String userNameActual = driver.findElement(By.name("firstname")).getAttribute("value");
+ 		String userNameActual = driver.findElement(By.name("firstname")).getAttribute("value");
 		Assert.assertEquals("Jharna", userNameActual);
 	}
 	
+	
+	@And ("^User enters user last name$")
+	public void User_enters_user_last_name() {
+	driver.findElement(By.name("lastname")).sendKeys("Jain");
+		
+	}
+	
+	@But("^Mobile field should be blank$")
+	public void Mobile_field_should_be_blank() {
+		String mobileActual =  driver.findElement(By.name("reg_email__")).getAttribute("Value");
+		Assert.assertEquals(mobileActual,"");
+	}
 	
 }
