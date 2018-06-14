@@ -1,4 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("myfeature1.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("ParameterizationFF.feature");
 formatter.feature({
   "line": 1,
   "name": "login feature",
@@ -21,33 +21,45 @@ formatter.step({
 });
 formatter.step({
   "line": 6,
-  "name": "User enters user first name",
+  "name": "User enters user \"Jharna\" first name",
   "keyword": "When "
 });
 formatter.step({
   "line": 7,
-  "name": "User checks user first name is present",
+  "name": "User checks user \"Jharna\" first name is present",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Myfirststepdef.User_is_at_facebook_login_page()"
+  "location": "ParameterizationSD.User_is_at_facebook_login_page()"
 });
 formatter.result({
-  "duration": 6609796660,
+  "duration": 5181114919,
   "status": "passed"
 });
 formatter.match({
-  "location": "Myfirststepdef.User_enters_user_first_name()"
+  "arguments": [
+    {
+      "val": "Jharna",
+      "offset": 18
+    }
+  ],
+  "location": "ParameterizationSD.User_enters_user_first_name(String)"
 });
 formatter.result({
-  "duration": 344304988,
+  "duration": 843551859,
   "status": "passed"
 });
 formatter.match({
-  "location": "Myfirststepdef.User_checks_user_first_name_is_present()"
+  "arguments": [
+    {
+      "val": "Jharna",
+      "offset": 18
+    }
+  ],
+  "location": "ParameterizationSD.User_checks_user_first_name_is_present(String)"
 });
 formatter.result({
-  "duration": 71910881,
+  "duration": 34495514,
   "status": "passed"
 });
 formatter.scenario({
@@ -65,17 +77,17 @@ formatter.step({
 });
 formatter.step({
   "line": 11,
-  "name": "User enters user first name",
+  "name": "User enters user \"Tina\" first name",
   "keyword": "When "
 });
 formatter.step({
   "line": 12,
-  "name": "User enters user last name",
+  "name": "User enters user \"Jain\" last name",
   "keyword": "And "
 });
 formatter.step({
   "line": 13,
-  "name": "User checks user first name is present",
+  "name": "User checks user \"Tina\" first name is present",
   "keyword": "Then "
 });
 formatter.step({
@@ -84,39 +96,56 @@ formatter.step({
   "keyword": "But "
 });
 formatter.match({
-  "location": "Myfirststepdef.User_is_at_facebook_login_page()"
+  "location": "ParameterizationSD.User_is_at_facebook_login_page()"
 });
 formatter.result({
-  "duration": 5721180697,
+  "duration": 5305202722,
   "status": "passed"
 });
 formatter.match({
-  "location": "Myfirststepdef.User_enters_user_first_name()"
+  "arguments": [
+    {
+      "val": "Tina",
+      "offset": 18
+    }
+  ],
+  "location": "ParameterizationSD.User_enters_user_first_name(String)"
 });
 formatter.result({
-  "duration": 197711732,
+  "duration": 159199538,
   "status": "passed"
 });
 formatter.match({
-  "location": "Myfirststepdef.User_enters_user_last_name()"
+  "arguments": [
+    {
+      "val": "Jain",
+      "offset": 18
+    }
+  ],
+  "location": "ParameterizationSD.User_enters_user_last_name(String)"
 });
 formatter.result({
-  "duration": 225228250,
+  "duration": 121822199,
   "status": "passed"
 });
 formatter.match({
-  "location": "Myfirststepdef.User_checks_user_first_name_is_present()"
+  "arguments": [
+    {
+      "val": "Tina",
+      "offset": 18
+    }
+  ],
+  "location": "ParameterizationSD.User_checks_user_first_name_is_present(String)"
 });
 formatter.result({
-  "duration": 53917338,
+  "duration": 37755795,
   "status": "passed"
 });
 formatter.match({
-  "location": "Myfirststepdef.Mobile_field_should_be_blank()"
+  "location": "ParameterizationSD.Mobile_field_should_be_blank()"
 });
 formatter.result({
-  "duration": 46255426,
-  "error_message": "java.lang.AssertionError: expected:\u003cnull\u003e but was:\u003c\u003e\r\n\tat org.junit.Assert.fail(Assert.java:88)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:834)\r\n\tat org.junit.Assert.assertEquals(Assert.java:118)\r\n\tat org.junit.Assert.assertEquals(Assert.java:144)\r\n\tat Sample.Myfirststepdef.Mobile_field_should_be_blank(Myfirststepdef.java:53)\r\n\tat ✽.But Mobile field should be blank(myfeature1.feature:14)\r\n",
-  "status": "failed"
+  "duration": 37866124,
+  "status": "passed"
 });
 });

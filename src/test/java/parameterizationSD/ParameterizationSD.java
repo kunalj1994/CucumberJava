@@ -1,4 +1,4 @@
-package Sample;
+package parameterizationSD;
 
 import org.junit.Assert;
 import org.openqa.selenium.By;
@@ -15,7 +15,7 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
 
-public class Myfirststepdef {
+public class ParameterizationSD {
 	
 	WebDriver driver;
 	
@@ -26,24 +26,24 @@ public class Myfirststepdef {
 		driver.get("https://www.facebook.com/");
 		}
 
-	@When ("^User enters user first name$")
-	public void User_enters_user_first_name() {
+	@When ("^User enters user \"([^\"]*)\" first name$")
+	public void User_enters_user_first_name(String Username) {
 		WebDriverWait wait = new WebDriverWait(driver, 10000);
 		WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(By.name("firstname")));
-		element.sendKeys("Jharna");
+		element.sendKeys(Username);
 		
 	}
 	
-	@Then ("^User checks user first name is present$") 
-		public void User_checks_user_first_name_is_present() {
+	@Then ("^User checks user \"([^\"]*)\" first name is present$") 
+		public void User_checks_user_first_name_is_present(String Username) {
  		String userNameActual = driver.findElement(By.name("firstname")).getAttribute("value");
-		Assert.assertEquals("Jharna", userNameActual);
+		Assert.assertEquals(Username, userNameActual);
 	}
 	
 	
-	@And ("^User enters user last name$")
-	public void User_enters_user_last_name() {
-	driver.findElement(By.name("lastname")).sendKeys("Jain");
+	@And ("^User enters user \"([^\"]*)\" last name$")
+	public void User_enters_user_last_name(String Surname) {
+	driver.findElement(By.name("lastname")).sendKeys(Surname);
 		
 	}
 	
